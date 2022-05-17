@@ -1,0 +1,9 @@
+[control_plane]
+control1 ansible_host=[insert-ip] ansible_user=[insert-user]
+ 
+[workers]
+worker1 ansible_host=[insert-ip] ansible_user=[insert-user]
+worker2 ansible_host=[insert-ip] ansible_user=[insert-user]
+
+[bastion]
+bastion ansible_host=[insert-ip] ansible_user=[insert-user]

@@ -1,0 +1,11 @@
+---
+- hosts: workers
+  become: yes
+  tasks:
+   - name: install nfs common
+     apt:
+       name: nfs-common
+       state: present
+
+   - name: Configure nfs fstab
+     ansible.builtin.shell: /usr/bin/echo "[insert-ip]:/opt/k8s /mnt nfs defaults 0 0" >> /etc/fstab; mount -a
