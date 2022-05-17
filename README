@@ -1,3 +1,21 @@
+CLOUD AWS:
+
 - Reposítório contém codigo terraform para provisionar infraestrutura na AWS, utilizando recursos e serviços dentro do free tier. 
+- Provisionado uma VPC, contendo três subnets privadas e três subnets públicas;
+- Provisionado um internet gateway para prover a conectividade com a internet para o
+ambiente público;
+- Provisionado uma Instance Nat , fazendo a função do serviço AWS Nat Gateway
+(serviço fora do free tier), para prover acesso à internet para as subnets privadas;
+- Foram provisionados três instâncias para o cluster k8s, sendo uma instância master
+node e duas instâncias como worker node;
+- Provisionado uma instância com serviço nfs, para montagem nos workers nodes e
+assim utilizarmos Persistent Volume de forma distribuída;
+- Provisionado um bastion em subnet pública para gestão do ambiente;
+- Provisionado um application load balancer para permitir acesso através da internet
+para a aplicação em execução no cluster k8s
+
+
+KUBERNETES:
+
 - Código ansible para instalação do cluster kubernetes.
-- Chart helm para implantação de aplicação php com conexão com banco de dados.
+- Chart helm para implantação de aplicação php com conexão com banco de dados persistente.
