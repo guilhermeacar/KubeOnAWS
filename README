@@ -1,6 +1,6 @@
 CLOUD AWS:
 
-- Reposítório contém codigo terraform para provisionar infraestrutura na AWS, utilizando recursos e serviços dentro do free tier. 
+- Reposítório contém código terraform para provisionar infraestrutura na AWS, utilizando recursos e serviços dentro do free tier. 
 - Provisionado uma VPC, contendo três subnets privadas e três subnets públicas;
 - Provisionado um internet gateway para prover a conectividade com a internet para o
 ambiente público;
