@@ -1,0 +1,3 @@
+- Reposítório contém codigo terraform para provisionar infraestrutura na AWS, utilizando recursos e serviços dentro do free tier. 
+- Código ansible para instalação do cluster kubernetes.
+- Chart helm para implantação de aplicação php com conexão com banco de dados.
